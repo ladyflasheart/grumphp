@@ -395,6 +395,7 @@ services:
             - '@linter.yamllint'
         tags:
             - {name: grumphp.task, config: yamllint}
+
     task.filename:
         class: GrumPHP\Task\FileName
         arguments:
