@@ -121,7 +121,7 @@ class CommitMessageMayden implements TaskInterface
             $longBodyLines = $this->getTooLongBodyLineNumbers($context);
             if (count($longBodyLines)) {
                 $errors[] = sprintf(
-                    'The following lines exceeded the maximum width of %u : ',
+                    'The following lines exceed the maximum width of %u : ',
                     $config['max_body_width']
                 )
                 . implode(',', $longBodyLines);
