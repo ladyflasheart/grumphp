@@ -402,3 +402,10 @@ services:
             - '@config'
         tags:
             - {name: grumphp.task, config: file_name}
+
+    task.commitmessagemayden:
+        class: GrumPHP\Task\Git\CommitMessageMayden
+        arguments:
+            - '@config'
+        tags:
+            - {name: grumphp.task, config: git_commit_message_mayden}
