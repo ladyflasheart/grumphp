@@ -48,7 +48,7 @@ class Application extends SymfonyConsole
         $this->filesystem = new Filesystem();
         $this->container = $this->getContainer();
         $this->setDispatcher($this->container->get('event_dispatcher'));
-
+        date_default_timezone_set('Europe/London');
         parent::__construct(self::APP_NAME, self::APP_VERSION);
     }
 
