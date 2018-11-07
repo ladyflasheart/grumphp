@@ -84,8 +84,7 @@ class FileName implements TaskInterface
 
         $exceptions = [];
         foreach ($config['checks'] as $filenameCheck) {
-            $pathsPattern = new Regex($filenameCheck['paths_pattern']);
-            $files = $context->getFiles()->path($pathsPattern);
+            $files = $context->getFiles()->path($filenameCheck['paths_pattern']);
 
             if (0 !== $files->count()) {
                 foreach ($files as $file) {

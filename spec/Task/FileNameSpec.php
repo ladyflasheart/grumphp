@@ -20,7 +20,7 @@ class FileNameSpec extends ObjectBehavior
 {
     function let(GrumPHP $grumPHP)
     {
-        $pathsPattern = '/^mysql\/.+/';
+        $pathsPattern = '^mysql\/';
         $ruleName = 'Patch files must follow special naming format';
         $rulePattern = '/^20[0-9]{2}(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])(-[a-z0-9]+)+.(sql|sqx)$/';
         $sqlFileCheck =
